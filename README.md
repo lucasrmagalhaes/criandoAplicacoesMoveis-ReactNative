@@ -5,7 +5,7 @@
          alt="app CV" 
     />
   </a><br />
-  <strong>app CV</strong>
+  <strong>App CV</strong>
 </p>
 
 <hr />
@@ -17,7 +17,7 @@
          alt="app Números Aleatórios" 
     />
   </a><br />
-  <strong>app Números Aleatórios</strong>
+  <strong>App Números Aleatórios</strong>
 </p>
 
 <hr />
