@@ -3,6 +3,7 @@ import { StyleSheet, View, Image, Text, Alert, TouchableOpacity } from 'react-na
 import Icon from 'react-native-vector-icons/Feather';
 
 import foto from './android/app/src/assets/perfil.jpg';
+import Card from './android/app/src/components/Card';
 
 const App = () => {
 
@@ -39,33 +40,21 @@ const App = () => {
             <TouchableOpacity onPress={() => handleRedeSocial('linkedin')}>
               <Icon name="linkedin" size={30} />
             </TouchableOpacity>
+
           </View>
         </View>
 
-          <View style={style.card_container}>
-            <View style={style.card}>
-              <View style={style.card_header}>
-                <Text>Experiência Profissional</Text>
-              </View>
-              <View style={style.card_content}>
-                <Text style={style.card_content_text}>Desenvolvedor JR.</Text>
-                <Text style={style.card_content_text}>Técnico de Manutenção JR.</Text>
-                <Text style={style.card_content_text}>Manutenção e Suporte em Informática</Text>
-              </View>
-            </View>
-          </View>
+        <Card titulo="Formação Acadêmica">
+          <Text style={style.card_content_text}>Sistemas para Internet</Text>
+          <Text style={style.card_content_text}>Técnico em Informática</Text>
+        </Card>
 
-          <View style={style.card_container}>
-            <View style={style.card}>
-              <View style={style.card_header}>
-                <Text>Formação Acadêmica</Text>
-              </View>
-              <View style={style.card_content}>
-                <Text style={style.card_content_text}>Sistemas para Internet</Text>
-                <Text style={style.card_content_text}>Técnico em Informática</Text>
-              </View>
-            </View>
-          </View>
+        <Card titulo="Experiência Profissional"> 
+          <Text style={style.card_content_text}>Desenvolvedor JR.</Text>
+          <Text style={style.card_content_text}>Auxiliar Técnico</Text>
+          <Text style={style.card_content_text}>Técnico de Manutenção JR.</Text>
+          <Text style={style.card_content_text}>Manutenção e Suporte em Informática</Text>
+        </Card>
 
       </View>
     </>
@@ -103,26 +92,10 @@ const style = StyleSheet.create ({
     width: '60%',
     marginTop: 20
   },
-  card_container: {
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 20
-  },
-  card: {
-    width: '75%',
-    borderRadius: 6,
-    borderWidth: 2,
-    borderColor: '#939393',
-    padding: 10,
-    backgroundColor: '#FFF'
-  },
-  card_content: {
-    marginTop: 10
-  },
   card_content_text: {
     color: '#939393',
-    marginBottom: 10
+    marginBottom: 2,
+    fontSize: 14
   }
 
 })
